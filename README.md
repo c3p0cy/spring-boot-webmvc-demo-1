@@ -16,25 +16,30 @@
      * Spring-core: Spring 核心
      * Spring-Beans: 定義 Bean 的支援
      * Spirng-Context: 提供依賴注入功能
-
-
-    2. AOP
+  2. AOP
      * Spring-AOP
      * Spring-Aspects
-
-
-    3. Web
-    4. 數據訪問與整合
+  3. Web
+  4. 數據訪問與整合
      * Spring-JDBC
      * Spring-ORM
 
-  ==基本上，每個模組都會對應一個以上的 jar 檔。==
+> **基本上，每個模組都會對應一個以上的 jar 檔。**
 
+---
 
+##### Spring Boot 資源檔案目錄：
+```
+	└── src
+		└── main
+			└── resources
+					└── static
+					└── templates
+					└── application.properties / application.yml
+```
 
-
-
-
-
+* static: 存放著像是 javascript, css, image 等靜態資源。
+* templates: Spring Boot 不推薦使用傳統 .jsp，而是搭配著一些模板引擎（[Thymeleaf](https://www.thymeleaf.org/), [FreeMarker](https://freemarker.apache.org/)）來建構頁面。
+* application.properties: 設定 [Spring Boot 的參數](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html)。
 
 
